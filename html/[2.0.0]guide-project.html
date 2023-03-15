@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>LabelOn</title>
-    <meta name="LabelOn" content="LabelOn my-page guide-project">
+    <meta name="LabelOn" content="LabelOn my-page guide-project tab">
 
     <!-- 파비콘 -->
     <!-- <link rel="icon" type="image/svg+xml" href="/images/favicon.ico"> -->
 
 
-    <!-- JQuery -->
+    <!-- JQuery -->..
     <!-- <script src="../js/jquery-1.12.4.min.js"></script> -->
     <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <link rel="stylesheet" href="../css/nice-select.css">
@@ -165,44 +165,65 @@
         <div class="inner">
             <div class="col-12 guide-cnt-wrap guide-pg">
 
-                <div class="guide-v-tab floating-menu">
+                <div class="guide-v-tab flx">
+                    <button type="button" class="title-m-21 v-tab-list on" data-id="v-tab-01">
+                        Bounding Box란?
+                    </button>
+                    <button type="button" class="title-m-21 v-tab-list" data-id="v-tab-02">
+                        Polygon Segmentation란?
+                    </button>
+                    <button type="button" class="title-m-21 v-tab-list" data-id="v-tab-03">
+                        TQA (Text Question Answering)란?
+                    </button>
+                    <button type="button" class="title-m-21 v-tab-list" data-id="v-tab-04">
+                        Keypoints란?
+                    </button>
+                    <button type="button" class="title-m-21 v-tab-list" data-id="v-tab-05">
+                        문장 요약이란?
+                    </button>
+                </div>
+
+
+
+
+                <!-- <div class="guide-v-tab floating-menu">
                     <ul class="title-m-21">
-                        <li class="m v-tab-list">
-                            <a href="#section-01" class="menu-01">
+                        <li class="m v-tab-list on" data-id="v-tab-01">
+                            <a href="#" class="menu-01">
                                 <span>Polygon Segmentation란?</span>
                             </a>
                         </li>
 
-                        <li class="m v-tab-list">
-                            <a href="#section-02" class="menu-02">
+                        <li class="m v-tab-list" data-id="v-tab-02">
+                            <a href="#" class="menu-02">
                                 <span>Bounding Box란?</span>
                             </a>
                         </li>
 
-                        <li class="m v-tab-list">
-                            <a href="#section-03" class="menu-03">
+                        <li class="m v-tab-list" data-id="v-tab-03">
+                            <a href="#" class="menu-03">
                                 <span>TQA (Text Question Answering)란?</span>
                             </a>
                         </li>
 
-                        <li class="m v-tab-list">
-                            <a href="#section-03" class="menu-04">
+                        <li class="m v-tab-list" data-id="v-tab-04">
+                            <a href="#" class="menu-04">
                                 <span>Keypoints란?</span>
                             </a>
                         </li>
 
-                        <li class="m v-tab-list">
-                            <a href="#section-03" class="menu-05">
+                        <li class="m v-tab-list" data-id="v-tab-05">
+                            <a href="#" class="menu-05">
                                 <span>문장 요약이란?</span>
                             </a>
                         </li>
 
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="guide-v-cnt">
 
-                    <div class="scroll v-ctn-sec1">
+                    <div class="v-ctn-sec on" id="v-tab-01">
                         <div class="col-8">
                             <div class="guide-img">
                                 <img src="../images/guide-img.png" alt="">
@@ -210,7 +231,7 @@
 
                             <div class="guide-txt-box">
                                 <ul>
-                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?</li>
+                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?1</li>
                                     <li class="g-txt-desc">AI가 처리한 이미지에서 빠지거나 잘못된 객체의 박스 정보를 보정하여 완성하는 라벨링 작업 방식</li>
 
                                 </ul>
@@ -226,7 +247,7 @@
                         </div>
                     </div>
 
-                    <div class="scroll v-ctn-sec2">
+                    <div class="v-ctn-sec" id="v-tab-02">
                         <div class="col-8">
                             <div class="guide-img">
                                 <img src="../images/guide-img.png" alt="">
@@ -234,7 +255,7 @@
 
                             <div class="guide-txt-box">
                                 <ul>
-                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?</li>
+                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?2</li>
                                     <li class="g-txt-desc">AI가 처리한 이미지에서 빠지거나 잘못된 객체의 박스 정보를 보정하여 완성하는 라벨링 작업 방식</li>
 
                                 </ul>
@@ -250,7 +271,7 @@
                         </div>
                     </div>
 
-                    <div class="scroll v-ctn-sec3">
+                    <div class="v-ctn-sec" id="v-tab-03">
                         <div class="col-8">
                             <div class="guide-img">
                                 <img src="../images/guide-img.png" alt="">
@@ -258,7 +279,7 @@
 
                             <div class="guide-txt-box">
                                 <ul>
-                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?</li>
+                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?3</li>
                                     <li class="g-txt-desc">AI가 처리한 이미지에서 빠지거나 잘못된 객체의 박스 정보를 보정하여 완성하는 라벨링 작업 방식</li>
 
                                 </ul>
@@ -274,7 +295,7 @@
                         </div>
                     </div>
 
-                    <div class="scroll v-ctn-sec4">
+                    <div class="v-ctn-sec" id="v-tab-04">
                         <div class="col-8">
                             <div class="guide-img">
                                 <img src="../images/guide-img.png" alt="">
@@ -282,7 +303,7 @@
 
                             <div class="guide-txt-box">
                                 <ul>
-                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?</li>
+                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?4</li>
                                     <li class="g-txt-desc">AI가 처리한 이미지에서 빠지거나 잘못된 객체의 박스 정보를 보정하여 완성하는 라벨링 작업 방식</li>
 
                                 </ul>
@@ -298,7 +319,7 @@
                         </div>
                     </div>
 
-                    <div class="scroll v-ctn-sec5">
+                    <div class="v-ctn-sec" id="v-tab-05">
                         <div class="col-8">
                             <div class="guide-img">
                                 <img src="../images/guide-img.png" alt="">
@@ -306,7 +327,7 @@
 
                             <div class="guide-txt-box">
                                 <ul>
-                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?</li>
+                                    <li class="g-txt-tit">어노데이터는 어떤 일을 하나요?5</li>
                                     <li class="g-txt-desc">AI가 처리한 이미지에서 빠지거나 잘못된 객체의 박스 정보를 보정하여 완성하는 라벨링 작업 방식</li>
 
                                 </ul>
@@ -333,7 +354,7 @@
 
 
     </div>
-    
+
 
     <div class="bg-deco-box">
         <div class="bg-deco"></div>
