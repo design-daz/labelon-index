@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LabelOn</title>
+    <meta name="LabelOn" content="LabelOn my-page my-info">
+
+    <!-- 파비콘 -->
+    <!-- <link rel="icon" type="image/svg+xml" href="/images/favicon.ico"> -->
+
+
+    <!-- JQuery -->
+    <!-- <script src="../js/jquery-1.12.4.min.js"></script> -->
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/css/nice-select.css">
+
+
+
+
+    <!-- Swiper@8 -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!-- <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1279px)" href="../css/style_t.css" /> -->
+    <!-- <link rel="stylesheet" media="all and (min-width: 360px) and (max-width: 767px)" href="../css/style_m.css" /> -->
+
+
+</head>
+ 
+<body>
+
+    <!-- ============  My-page > [3.0.1] my-info ============ -->
+
+    <header>
+        <div class="inner col-12">
+            <h1 class="main-logo flx">
+                <a href="\">LabelOn</a>
+            </h1>
+
+            <nav>
+                <ul class="gnb flx title-m-17 gray-900">
+                    <li class="nav-list">
+                        <a href="#">소개</a>
+                        <!-- <ul class="sub">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul> -->
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">이용가이드</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">회원정보</a>
+                            </li>
+
+                            <li>
+                                <a href="">입금계좌</a>
+                            </li>
+
+                            <li>
+                                <a href="">크레딧</a>
+                            </li>
+
+                            <li>
+                                <a href="">1:1 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">프로젝트</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="">프로젝트</a>
+                            </li>
+                            <li>
+                                <a href="">체험하기</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">마이페이지</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">회원정보</a>
+                            </li>
+
+                            <li>
+                                <a href="">입금계좌</a>
+                            </li>
+
+                            <li>
+                                <a href="">크레딧</a>
+                            </li>
+
+                            <li>
+                                <a href="">1:1 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">문의</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">비지니스 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">회원가입</a>
+                        <!-- <ul class="sub">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-bg"></div>
+
+    </header>
+
+
+
+    <div class="my-page">
+
+        <div class="sub-visual">
+            <div class="inner">
+
+                <div class="sub-visual-img">
+                </div>
+
+                <p class="headline-m-34 gray-000 my-page-tit">마이페이지</p>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="inner">
+            <ul class="sub-menu-list-box flx title-r-21 gray-400">
+                <li><a href="/html/[3.0.1]my-info.html" class="sub-menu-curr">회원정보</a></li>
+                <li><a href="/html/[3.1.0]change-pw.html">비밀번호 변경</a></li>
+                <li><a href="/html/[3.2.0]my-bank.html">입금계좌</a></li>
+                <li><a href="/html/[3.3.0]my-credit-today.html">크레딧</a></li>
+                <li><a href="#">1:1 문의</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="inner member-info">
+
+            <div class="member-info-wrap">
+                <p class="headline-m-24 gray-900">기본정보</p>
+
+                <div class="col-12 row-gap-32">
+
+                    <div class="label-input-box flx">
+                        <label for="email" class="title-r-17 gray-900">이메일</label>
+                        <input id="email" type="text" readonly="readonly" value="test@euclidsoft.co.kr">
+
+                    </div>
+
+                    <div class="label-input-box flx">
+                        <label for="name" class="title-r-17 gray-900">이름</label>
+                        <input id="name" type="text" readonly="readonly" value="홍길동">
+
+                    </div>
+
+                    <div class="label-input-box flx">
+                        <label for="telnum" class="title-r-17 gray-900">휴대전화</label>
+
+                        <div class="flx input-btn-box">
+                            <input id="telnum" type="text" placeholder="000-0000-0000">
+                            <button type="button">인증</button>
+                        </div>
+                    </div>
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">수신동의</label>
+
+                        <div class="input-radio-box flx">
+
+                            <div class="flx radio-btn-wrap">
+
+                                <div class="flx radio-btn">
+                                    <input id="sms-y" type="radio" name="sms-radio" checked>
+                                    <label for="sms-y" class="title-r-17 gray-900">네</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="sms-n" name="sms-radio" type="radio">
+                                    <label for="sms-n" class="title-r-17 gray-900">아니요</label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="label-input-box flx">
+                        <label for="rrn" class="title-r-17 gray-900">주민등록번호</label>
+
+                        <input id="rrn" type="text" value="123456-1234567" placeholder="000000-0000000">
+
+                    </div>
+
+
+                    <div class="label-input-box flx">
+                        <label for="rrn-check" class="title-r-17 gray-900">실명인증</label>
+
+                        <input id="rrn-check" type="text" readonly="readonly" value="실명인증이 완료되었습니다.">
+
+                    </div>
+
+
+                    <div class="label-input-box flx">
+                        <label for="address" class="title-r-17 gray-900">우편번호</label>
+
+                        <div class="flx input-btn-box">
+                            <input id="zip-code" readonly="readonly" type="text" value="12345"
+                                placeholder="우편번호를 검색하세요">
+                            <button type="button">우편번호 찾기</button>
+                        </div>
+                    </div>
+
+                    <div class="label-input-box flx span-12">
+                        <label for="address" class="title-r-17 gray-900">주소</label>
+                        <input id="address" type="text" readonly="readonly" value="대전 서구 월평동 12345">
+
+                    </div>
+
+                    <div class="label-input-box flx span-12">
+                        <label for="address" class="title-r-17 gray-900">상세주소</label>
+                        <input id="addressDetail" type="text" value="선사엔조이 빌딩 4층" placeholder="상세주소를 입력하세요">
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="member-info-wrap">
+                <p class="headline-m-24 gray-900">부가정보</p>
+
+                <div class="col-12 row-gap-24">
+
+
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">성별</label>
+
+                        <div class="input-radio-box flx">
+
+                            <div class="flx radio-btn-wrap">
+
+                                <div class="flx radio-btn">
+                                    <input id="maleChk" type="radio" name="gender-code" checked>
+                                    <label for="maleChk" class="title-r-17 gray-900">남</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="femaleChk" name="gender-code" type="radio">
+                                    <label for="femaleChk" class="title-r-17 gray-900">여</label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">연령</label>
+
+                        <div class="input-radio-box flx">
+
+                            <div class="flx radio-btn-wrap">
+
+                                <div class="flx radio-btn">
+                                    <input id="ageChk10" type="radio" name="age-code" checked>
+                                    <label for="ageChk10" class="title-r-17 gray-900">10대</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="ageChk20" name="age-code" type="radio">
+                                    <label for="ageChk20" class="title-r-17 gray-900">20대</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="ageChk30" name="age-code" type="radio">
+                                    <label for="ageChk30" class="title-r-17 gray-900">30대</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="ageChk40" name="age-code" type="radio">
+                                    <label for="ageChk40" class="title-r-17 gray-900">40대</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="ageChk50" name="age-code" type="radio">
+                                    <label for="ageChk50" class="title-r-17 gray-900">50대</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="ageChk60" name="age-code" type="radio">
+                                    <label for="ageChk60" class="title-r-17 gray-900">60대이상</label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">작업 시간</label>
+
+                        <div class="input-chk-box flx">
+
+                            <div class="flx chk-box-wrap">
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="time-chk0" name="work-time" checked>
+                                    <label for="time-chk0">종일</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="time-chk1" name="work-time">
+                                    <label for="time-chk1">오전</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="time-chk2" name="work-time">
+                                    <label for="time-chk2">오후</label>
+                                </div>
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="time-chk3" name="work-time">
+                                    <label for="time-chk3">야간</label>
+                                </div>
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="time-chk4" name="work-time">
+                                    <label for="time-chk4">새벽</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="time-chk5" name="work-time">
+                                    <label for="time-chk5">주중</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="time-chk6" name="work-time" checked>
+                                    <label for="time-chk6">토요일</label>
+                                </div>
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="time-chk7" name="work-time" checked>
+                                    <label for="time-chk7">일요일</label>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="label-input-box flx span-12">
+
+                        <label class="title-r-17 gray-900">취약계층 여부 <span class="title-r-13 gray-600">(복수선택
+                                가능)</span></label>
+
+                        <div class="input-chk-box flx">
+
+                            <div class="flx chk-box-wrap">
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk0" name="vulnerable-groups" checked>
+                                    <label for="vulnerable-chk0">장애</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk1" name="vulnerable-groups">
+                                    <label for="vulnerable-chk1">임신/육아</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk2" name="vulnerable-groups">
+                                    <label for="vulnerable-chk2">경력단절여성</label>
+                                </div>
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk3" name="vulnerable-groups">
+                                    <label for="vulnerable-chk3">보훈</label>
+                                </div>
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk4" name="vulnerable-groups">
+                                    <label for="vulnerable-chk4">다문화가정</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk5" name="vulnerable-groups">
+                                    <label for="vulnerable-chk5">초/중/고등학생</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk6" name="vulnerable-groups" checked>
+                                    <label for="vulnerable-chk6">대학생</label>
+                                </div>
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk7" name="vulnerable-groups">
+                                    <label for="vulnerable-chk7">투잡이상</label>
+                                </div>
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk8" name="vulnerable-groups">
+                                    <label for="vulnerable-chk8">(무직)미취업자</label>
+                                </div>
+
+
+                                <div class="flx time-chk">
+                                    <input type="checkbox" id="vulnerable-chk9" name="vulnerable-groups">
+                                    <label for="vulnerable-chk9">(무직)실직자</label>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">우대사항 <span class="title-r-13 gray-600">(장애인)</span></label>
+
+                        <div class="input-radio-box flx">
+
+                            <div class="flx radio-btn-wrap">
+
+                                <div class="flx radio-btn">
+                                    <input id="disabled-person-y" type="radio" name="disabled-person" checked>
+                                    <label for="disabled-person-y" class="title-r-17 gray-900">유</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="disabled-person-n" name="disabled-person" type="radio">
+                                    <label for="disabled-person-n" class="title-r-17 gray-900">무</label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">첨부파일</label>
+
+                        <!-- <div class="flx input-btn-box">
+
+                            <div class="input-file-box">
+                                <input id="input-file0" readonly="readonly" type="text" placeholder="파일없음">
+                                <div></div>
+                            </div>
+                            <button type="button">파일 찾기</button>
+
+                        </div> -->
+
+                        <div class="flx input-btn-box">
+
+                            <div class="file-box flx">
+
+                                <div class="input-file-box">
+                                    <input id="input-file1" readonly="readonly" type="text" placeholder="파일없음">
+                                    <div class="x-btn-box">
+                                        <a href="#" class="x-btn"></a>
+                                    </div>
+                                </div>
+
+                                <label for="ex_file">파일 찾기</label>
+                                <input type="file" id="ex_file">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="member-info-wrap">
+                <p class="headline-m-24 gray-900">로그인 경로</p>
+
+                <div class="col-12 row-gap-24">
+
+
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">Label</label>
+
+                        <div class="input-radio-box flx">
+
+                            <div class="flx radio-btn-wrap">
+
+                                <div class="flx radio-btn">
+                                    <input id="log-google" type="radio" name="login-path" checked>
+                                    <label for="log-google" class="title-r-17 gray-900">구글</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="log-naver" name="login-path" type="radio">
+                                    <label for="log-naver" class="title-r-17 gray-900">네이버</label>
+                                </div>
+
+                                <div class="flx radio-btn">
+
+                                    <input id="log-kakao" name="login-path" type="radio">
+                                    <label for="log-kakao" class="title-r-17 gray-900">카카오</label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="inner">
+            <div class="flx submit-btn-box">
+                <button type="button" class="submit-btn">수정</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="inner">
+
+            <div class="f-cnt-box col-12">
+
+                <div class="f-logo">
+                    <img src="/images/euclidsoft-logo.png" alt="euclidsoft-logo">
+                </div>
+
+                <div class="f-info-box title-m-13 gray-600">
+
+                    <ul class="f-menu flx">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+
+                    </ul>
+
+
+                    <ul class="f-address flx">
+                        <li>(35214) 대전광역시 서구 대덕대로317번길 20 4층</li>
+                        <li>Tel : 042-488-6589 Fax: 042-367-0126</li>
+
+                    </ul>
+
+                    <p class="copyright">© Copyright 2023 EUCLIDSOFT All Rights Reserved.</p>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- ==================== Js ==================== -->
+    <script src="/js/swiper-bundle.min.js"></script>
+
+
+    <script src="/js/external/jquery/jquery.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+
+    <script src="/js/jquery.nice-select.min.js"></script>
+
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

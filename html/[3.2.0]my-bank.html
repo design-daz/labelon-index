@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LabelOn</title>
+    <meta name="LabelOn" content="LabelOn my-page my-bank">
+
+    <!-- 파비콘 -->
+    <!-- <link rel="icon" type="image/svg+xml" href="/images/favicon.ico"> -->
+
+
+    <!-- JQuery -->
+    <!-- <script src="../js/jquery-1.12.4.min.js"></script> -->
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="/css/nice-select.css">
+
+
+
+
+    <!-- Swiper@8 -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!-- <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1279px)" href="../css/style_t.css" /> -->
+    <!-- <link rel="stylesheet" media="all and (min-width: 360px) and (max-width: 767px)" href="../css/style_m.css" /> -->
+
+
+</head>
+
+<body>
+
+    <!-- ============  My-page > [3.2.0] my-bank ============ -->
+
+    <header>
+        <div class="inner col-12">
+            <h1 class="main-logo flx">
+                <a href="\">LabelOn</a>
+            </h1>
+
+            <nav>
+                <ul class="gnb flx title-m-17 gray-900">
+                    <li class="nav-list">
+                        <a href="#">소개</a>
+                        <!-- <ul class="sub">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul> -->
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">이용가이드</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">회원정보</a>
+                            </li>
+
+                            <li>
+                                <a href="">입금계좌</a>
+                            </li>
+
+                            <li>
+                                <a href="">크레딧</a>
+                            </li>
+
+                            <li>
+                                <a href="">1:1 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">프로젝트</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="">프로젝트</a>
+                            </li>
+                            <li>
+                                <a href="">체험하기</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">마이페이지</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">회원정보</a>
+                            </li>
+
+                            <li>
+                                <a href="">입금계좌</a>
+                            </li>
+
+                            <li>
+                                <a href="">크레딧</a>
+                            </li>
+
+                            <li>
+                                <a href="">1:1 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">문의</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">비지니스 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">회원가입</a>
+                        <!-- <ul class="sub">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-bg"></div>
+
+    </header>
+
+
+
+    <div class="my-page">
+
+        <div class="sub-visual">
+            <div class="inner">
+
+                <div class="sub-visual-img">
+                </div>
+
+                <p class="headline-m-34 gray-000 my-page-tit">마이페이지</p>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="inner">
+            <ul class="sub-menu-list-box flx title-r-21 gray-400">
+                <li><a href="/html/[3.0.1]my-info.html">회원정보</a></li>
+                <li><a href="/html/[3.1.0]change-pw.html">비밀번호 변경</a></li>
+                <li><a href="/html/[3.2.0]my-bank.html" class="sub-menu-curr">입금계좌</a></li>
+                <li><a href="/html/[3.3.0]my-credit-today.html">크레딧</a></li>
+                <li><a href="#">1:1 문의</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="inner member-info">
+
+            <div class="member-info-wrap">
+
+                <div class="my-bank-tit flx">
+                    <p class="headline-m-24 gray-900">입금계좌 관리</p>
+                    <button type="button" class="btn-2nd">부모 동의서 다운로드</button>
+                </div>
+
+                <div class="col-12 row-gap-32">
+
+                    <div class="label-input-box flx">
+                        <label for="rrn-1" class="title-r-17 gray-900">은행명</label>
+
+                        <select name="bank-name" id="rrn-1">
+                            <option data-display="은행명을 선택해주세요">은행명을 선택해주세요</option>
+                            <option value="1">국민은행</option>
+                            <option value="2">신한은행</option>
+                            <option value="3">농협</option>
+                            <option value="4">하나은행</option>
+
+                            <option value="1">국민은행</option>
+                            <option value="2">신한은행</option>
+                            <option value="3">농협</option>
+                            <option value="4">하나은행</option>
+
+
+                            <option value="1">국민은행</option>
+                            <option value="2">신한은행</option>
+                            <option value="3">농협</option>
+                            <option value="4">하나은행</option>
+
+
+                        </select>
+
+                    </div>
+
+                    <div class="label-input-box flx">
+                        <label for="bank-num" class="title-r-17 gray-900">계좌번호</label>
+
+                        <input id="bank-num" type="text" placeholder="123-12345-123">
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="member-info-wrap my-bk">
+                <p class="headline-m-24 gray-900">미성년자 여부</p>
+
+                <div class="col-12 row-gap-24">
+
+
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">미성년자 인가요?</label>
+
+                        <div class="input-radio-box flx">
+
+                            <div class="flx radio-btn-wrap">
+
+                                <div class="flx radio-btn">
+                                    <input id="minorChk-y" type="radio" name="minor-chk" checked>
+                                    <label for="minorChk-y" class="title-r-17 gray-900">미성년자입니다.</label>
+                                </div>
+
+
+                                <div class="flx radio-btn">
+
+                                    <input id="minorChk-n" name="minor-chk" type="radio">
+                                    <label for="minorChk-n" class="title-r-17 gray-900">아닙니다.</label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="label-input-box flx">
+
+                        <label class="title-r-17 gray-900">가족관계증명서</label>
+
+                        <!-- <div class="flx input-btn-box">
+
+                            <div class="input-file-box">
+                                <input id="input-file0" readonly="readonly" type="text" placeholder="파일없음">
+                                <div></div>
+                            </div>
+                            <button type="button">파일 찾기</button>
+
+                        </div> -->
+
+                        <div class="flx input-btn-box">
+
+                            <div class="file-box flx">
+
+                                <div class="input-file-box">
+                                    <input id="familyCertificateFile" readonly="readonly" type="text" placeholder="파일없음">
+                                    <div class="x-btn-box">
+                                        <a href="#" class="x-btn"></a>
+                                    </div>
+                                </div>
+
+                                <label for="ex_familyCerfile">파일 찾기</label>
+                                <input type="file" id="ex_familyCerfile">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="label-input-box flx my-bk">
+
+                        <label class="title-r-17 gray-900">부모동의서</label>
+
+                        <!-- <div class="flx input-btn-box">
+
+                            <div class="input-file-box">
+                                <input id="input-file0" readonly="readonly" type="text" placeholder="파일없음">
+                                <div></div>
+                            </div>
+                            <button type="button">파일 찾기</button>
+
+                        </div> -->
+
+                        <div class="flx input-btn-box">
+
+                            <div class="file-box flx">
+
+                                <div class="input-file-box">
+                                    <input id="parentsAgreeFile" readonly="readonly" type="text" placeholder="파일없음">
+                                    <div class="x-btn-box">
+                                        <a href="#" class="x-btn"></a>
+                                    </div>
+                                </div>
+
+                                <label for="ex_parentsAgrfile">파일 찾기</label>
+                                <input type="file" id="ex_parentsAgrfile">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-12 row-gap-16">
+
+                <ul class="span-12 title-r-15 my-bk-txt">
+
+                    <li>예금주명이 다른경우 반려처리 될 수 있습니다.</li>
+                    <li>신청일 이후 재신청된 반려건은 다음 입금일에 처리됩니다.</li>
+                    <li>환금은 신청금액에서 원천징수 3.3%를 제외한 금액으로 진행됩니다.</li>
+
+                </ul>
+
+                <div class="flx agree-chk span-12">
+                    <input type="checkbox" id="agreeChk" name="agreeChk">
+                    <label for="agreeChk">위 정보를 모두 확인하였으며, 수익금 신청에 동의합니다.</label>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="inner">
+            <div class="flx submit-btn-box">
+                <button type="button" class="submit-btn">제출</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="inner">
+
+            <div class="f-cnt-box col-12">
+
+                <div class="f-logo">
+                    <img src="/images/euclidsoft-logo.png" alt="euclidsoft-logo">
+                </div>
+
+                <div class="f-info-box title-m-13 gray-600">
+
+                    <ul class="f-menu flx">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+
+                    </ul>
+
+
+                    <ul class="f-address flx">
+                        <li>(35214) 대전광역시 서구 대덕대로317번길 20 4층</li>
+                        <li>Tel : 042-488-6589 Fax: 042-367-0126</li>
+
+                    </ul>
+
+                    <p class="copyright">© Copyright 2023 EUCLIDSOFT All Rights Reserved.</p>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- ==================== Js ==================== -->
+    <script src="/js/swiper-bundle.min.js"></script>
+
+
+    <script src="/js/external/jquery/jquery.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+
+    <script src="/js/jquery.nice-select.min.js"></script>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
