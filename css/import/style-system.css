@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+
+/*
+Style System
+================================================ */
+
+
+/* ======== color ======== */
+ 
+/* --- text --- */
+
+.gray-900 {
+    color: #1B242C;
+}
+
+.gray-600 {
+    /* base */
+    color: #555F6D;
+}
+
+.gray-400 {
+    color: #9EA8B3;
+}
+
+
+.gray-300 {
+    /* hover */
+    color: #E9ECEF;
+}
+
+.gray-200 {
+    /* border */
+    color: #F0F3F5;
+    
+}
+
+.gray-100 {
+    /* bg */
+    color: #F5F7F9;
+    
+}
+
+.gray-000 {
+    color: #fff;   
+}
+
+
+/* --- button --- */
+
+.btn-primary {
+    background-color: #007CBD;
+}
+
+.btn-secondary {
+    background-color: #FF805B;
+}
+
+.btn-hover {
+    background-color: #00466B;
+
+}
+
+/* --- Graph --- */
+
+.graph-credit-blue {
+    background-color: #008CFF;
+}
+
+.graph-credit-orange {
+    background-color: #FF7D00;
+}
+
+.graph-credit-gray {
+    background-color: #CACACA;
+}
+
+
+.graph-work-blue1 {
+    background-color: #005ACD;
+}
+
+.graph-work-blue2 {
+    background-color: #4CAEFF;
+    
+}
+
+.graph-work-blue3 {
+    background-color: #99D1FF;
+}
+
+.graph-work-yellow {
+    background-color: #F7BA1E;
+    
+}
+
+.graph-bar-blue {
+    background-color: #165DFF;
+}
+.graph-bar-green {
+    background-color: #14C9C9;
+    
+}
+
+ 
+/* --- typo --- */
+
+.headline-m-34 {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 44.2px;
+}
+.headline-m-28 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36.4px;
+
+}
+.headline-m-24 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.2px;
+}
+
+.title-r-21 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+}
+
+.title-m-21 {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 31.5px;
+}
+
+.title-r-17 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+}
+
+.title-m-17 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25.5px;
+
+}
+
+.title-r-15 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+.title-m-15 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+
+}
+
+.title-r-13 {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+}
+
+.title-m-13 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+
+}
+
+
+/* ======== Shadow ======== */ 
+
+
+.shadow-x {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-xs {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-s {
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-m {
+    box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-l {
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+

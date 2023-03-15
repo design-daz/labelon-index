@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+
+/*
+스타일 초기화
+================================================ */
+@import url('/css/import/destyle.css');
+/*
+스타일 시스템
+================================================ */
+@import url('/css/import/style-system.css');
+
+
+/*
+fonts
+================================================ */
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 900;
+    src: url("../assets/fonts/NotoSansKR-Black.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    src: url("../assets/fonts/NotoSansKR-Bold.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    src: url("../assets/fonts/NotoSansKR-Medium.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    src: url("../assets/fonts/NotoSansKR-Regular.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 300;
+    src: url("../assets/fonts/NotoSansKR-Light.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 100;
+    src: url("../assets/fonts/NotoSansKR-Thin.otf") format("OpenType");
+}
+
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+* {
+    outline: 1px solid #FF7D00;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+
+}
+
+body {
+    color: #555F6D;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+    background-color: white;
+
+    /* min-width: 1300px; */
+
+    /* position: relative; */
+}
+
+/*
+COMMON
+================================================ */
+
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.inner {
+
+    outline: 1px solid #008CFF;
+    max-width: 1300px;
+
+    padding: 0 10px;
+
+    width: 100%;
+    height: 100%;
+
+    /* display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px; */
+
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flx {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+
+.col-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* 
+index
+///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*
+header
+================================================ */
+
+header {
+    height: 100px;
+
+    position: sticky;
+
+    top: 0px;
+
+    z-index: 1024;
+}
+
+header .main-logo {
+    grid-column: span 2;
+
+}
+
+header .main-logo>a {
+    text-indent: -9999px;
+
+    display: inline-block;
+
+    width: 115px;
+    height: 27px;
+
+    background-image: url(../images/main-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+
+/*
+nav
+================================================ */
+
+nav {
+    grid-column: 6/ span 7;
+}
+
+.gnb.flx {
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+
+
+.nav-list {
+    position: relative;
+
+    /* width: calc(100% / 6); */
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a {
+    display: block;
+}
+
+.sub {
+    /* min-width: 100px; */
+    /* width: 100%;  */
+
+    width: max-content;
+    position: absolute;
+
+    top: 109px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* padding: 8px 0; */
+
+    z-index: 1024px;
+
+    display: none;
+}
+
+.sub li {
+    padding: 4px 0;
+    margin-bottom: 4px;
+}
+
+/* .sub li > a {
+    transition: all 0.2s;
+} */
+
+.sub li > a {
+    padding: 0 20px;
+}
+
+.sub li > a:hover {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    
+    color: #007CBD;
+}
+
+
+
+
+
+.nav-bg {
+
+    position: relative;
+
+    height: 155px;
+    max-width: 1280px;
+
+    margin: 0 auto;
+    background: #FFFFFF;
+
+    border: 1px solid #F0F3F5;
+
+    z-index: 1024px;
+
+
+    display: none;
+}
