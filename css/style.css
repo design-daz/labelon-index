@@ -4,11 +4,11 @@
 /*
 스타일 초기화
 ================================================ */
-@import url('/css/import/destyle.css');
+@import url('../css/import/destyle.css');
 /*
 스타일 시스템
 ================================================ */
-@import url('/css/import/style-system.css');
+@import url('../css/import/style-system.css');
 
 
 /*
