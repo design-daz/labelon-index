@@ -580,11 +580,13 @@ button.login-btn span {
     height: 16px;
 
     background-image: url(../images/login-arr.png);
-    background-position: center;
+    /* background-position: center; */
+    background-position: 4px;
+
     background-repeat: no-repeat;
     background-size: contain;
 
-    margin-left: 8px;
+    margin-left: 4px;
 }
 
 .login-btn:hover>div:nth-child(2)>span {
@@ -841,6 +843,29 @@ Section 3
     margin-top: 60px;
 }
 
+.program-none {
+
+    grid-column: span 12;
+    padding: 50px 0;
+
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pr-none-icon {
+    width: 70px;
+    height: 70px;
+
+    /* background-image: url(../images/icon/project-none-600.svg); */
+    background-image: url(../images/icon/project-none-400.svg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-bottom: 24px;
+}
+
 .program-box {
     grid-column: span 3;
 
@@ -1033,7 +1058,7 @@ button.program-more-btn span {
     height: 26px;
 
     background-image: url(../images/icon/program-more.png);
-    background-position: center;
+    background-position: 4px;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -1382,21 +1407,29 @@ My page > [2.0.0] guide-project
 }
 
 .guide-cnt-wrap.guide-pg {
-    margin-top: -100px;
+    /* margin-top: -100px; */
 }
 
 
 .guide-v-tab {
     grid-column: span 4;
 
-    height: 300px;
+    /* height: 300px; */
 
-    position: sticky;
-    top: 164px;
+    /* position: sticky; */
+    /* top: 164px; */
 
-    margin-top: 164px;
-    margin-bottom: 104px;
+    margin-top: 64px;
+    /* margin-bottom: 104px; */
     z-index: 100;
+
+
+    flex-direction: column;
+
+    align-items: flex-start;
+    text-align: left;
+
+    position: relative;
 
 }
 
@@ -1417,9 +1450,9 @@ My page > [2.0.0] guide-project
     background-color: #E9ECEF;
 }
 
-.guide-v-tab>ul {
+/* .guide-v-tab>ul {
     text-align: left;
-}
+} */
 
 .v-tab-list {
     padding: 10px;
@@ -1464,6 +1497,17 @@ My page > [2.0.0] guide-project
 
     position: relative;
 
+    /* padding-top: 64px; */
+    margin-top: 64px;
+
+}
+
+.v-ctn-sec {
+    display: none;
+}
+
+.v-ctn-sec.on {
+    display: grid;
 }
 
 /* .guide-v-cnt::before {
@@ -1483,10 +1527,10 @@ My page > [2.0.0] guide-project
 } */
 
 
-.scroll {
+/* .scroll {
     min-height: 1000px;
     padding-top: 100px;
-}
+} */
 
 .scroll>div {
     margin-top: 64px;
@@ -1559,7 +1603,7 @@ My page > [2.1.0] guide-experience
     left: 50%;
     top: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, calc(-50% - 17px));
 
     z-index: 5;
 
@@ -1568,7 +1612,7 @@ My page > [2.1.0] guide-experience
 .guide-pg-sub-tit {
     position: absolute;
     left: 50%;
-    top: 130px;
+    top: 114px;
 
     transform: translateX(-50%);
 
@@ -1680,11 +1724,11 @@ button.exp-btn span {
     height: 16px;
 
     background-image: url(../images/login-arr.png);
-    background-position: center;
+    background-position: 4px;
     background-repeat: no-repeat;
     background-size: contain;
 
-    margin-left: 8px;
+    margin-left: 4px;
 }
 
 .exp-btn:hover>div:nth-child(2)>span {
@@ -1710,6 +1754,8 @@ My page > [3.0.1] my-info
     overflow: hidden;
 
     /* position: relative; */
+
+    background-color: #fff;
 
 }
 
@@ -1867,6 +1913,8 @@ My page > [3.0.1] my-info
     cursor: default;
 
     background-color: #F5F7F9;
+
+    outline: transparent;
 
 }
 
@@ -2808,6 +2856,24 @@ table colgroup>.col-w-08 {
 .table-box .list-none:hover {
     background: #fff;
 
+}
+
+.list-none-box {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list-none-icon {
+    width: 50px;
+    height: 50px;
+
+    background-image: url(../images/icon/list-none-400.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-bottom: 12px;
 }
 
 
