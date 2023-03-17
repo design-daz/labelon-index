@@ -1,4 +1,24 @@
 $(document).ready(function () {
+  //  리사이징 할때마다 새로고침
+  //   var lastWidth = $(window).width();
+  //   $(window).resize(function () {
+  //     if ($(window).width() != lastWidth) {
+  //         location.reload();
+  //         lastWidth = $(window).width();
+  //         return false;
+  //     }
+  // });
+
+  // 리사이즈 끝나고 0.3초마다 리셋
+  // var delay = 300;
+  // var timer = null;
+  // $(window).on("resize", function () {
+  //   clearTimeout(timer);
+  //   timer = setTimeout(function () {
+  //     document.location.reload();
+  //   }, delay);
+  // });
+
   // nav
   // =========================== //
 
@@ -31,13 +51,29 @@ $(document).ready(function () {
   // mobile
   // =========================== //
 
-  // if ($(window).width() < 768) {
+  if ($(window).width() < 768) {
+    $("ul.gnb>li").click(function () {
+      $(this).find("ul.sub").stop().slideToggle();
+      $(this).toggleClass("on");
+      $(this).siblings().removeClass("on").find("ul.sub").stop().slideUp();
+    });
 
-  //   $("ul.gnb>li").click(function(){
-  //       $(this).find("ul.sub").stop().slideToggle();
+    // 모바일메뉴 open/close
+    $(".m-menu-btn").click(function () {
+      // $("nav").stop().slideDown();
+      $("nav").stop().fadeIn();
 
-  //   });
-  // }
+      $(".m-menu-btn").hide();
+      $(".m-x-btn").stop().show();
+    });
+    $(".m-x-btn").click(function () {
+      // $("nav").stop().slideUp();
+      $("nav").stop().fadeOut();
+
+      $(".m-menu-btn").show();
+      $(".m-x-btn").hide();
+    });
+  }
 
   // swiper - main-visual
   // =========================== //
@@ -65,25 +101,22 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       360: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       576: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
+        spaceBetween: 20,
+      },
+    },
   });
-
-
-  
 
   // [2.0.0] vetical tab
   // =========================== //
@@ -125,21 +158,19 @@ $(document).ready(function () {
           $menu.removeClass("on");
         }
       });
-
-      
     });
 
-  //   // // Go to the TOP
-  //   // var btnTop = $(".btn-top");
-  //   // btnTop.on("click", "a", function (e) {
-  //   //   e.preventDefault();
-  //   //   $doc.stop().animate(
-  //   //     {
-  //   //       scrollTop: 0,
-  //   //     },
-  //   //     800
-  //   //   );
-  //   // });
+    //   // // Go to the TOP
+    //   // var btnTop = $(".btn-top");
+    //   // btnTop.on("click", "a", function (e) {
+    //   //   e.preventDefault();
+    //   //   $doc.stop().animate(
+    //   //     {
+    //   //       scrollTop: 0,
+    //   //     },
+    //   //     800
+    //   //   );
+    //   // });
   })(window, window.jQuery);
 
   // Select library - nice select
@@ -155,16 +186,14 @@ $(document).ready(function () {
   //   $("#" + $(this).data("id")).addClass("on").siblings().removeClass("on");
   // });
 
-    // [2.0.0] credit-tab-box
+  // [2.0.0] credit-tab-box
   // =========================== //
 
   $(".guide-v-tab > button").click(function () {
     $(this).addClass("on").siblings().removeClass("on");
-    $("#" + $(this).data("id")).addClass("on").siblings().removeClass("on");
+    $("#" + $(this).data("id"))
+      .addClass("on")
+      .siblings()
+      .removeClass("on");
   });
-
-
-
-
-
 }); //ready end
