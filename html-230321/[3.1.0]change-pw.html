@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LabelOn</title>
+    <meta name="LabelOn" content="LabelOn my-page change-pw">
+
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.ico">
+
+
+    <!-- JQuery -->
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+
+
+
+    <!-- Swiper@8 -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- ============  My-page > [3.1.0] change-pw ============ -->
+
+    <header>
+        <div class="inner col-12">
+            <h1 class="main-logo flx">
+                <a href="\">LabelOn</a>
+            </h1>
+
+            <nav>
+                <ul class="gnb flx title-m-17 gray-900">
+                    <li class="nav-list">
+                        <a href="#">소개</a>
+  
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">이용가이드</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">회원정보</a>
+                            </li>
+
+                            <li>
+                                <a href="">입금계좌</a>
+                            </li>
+
+                            <li>
+                                <a href="">크레딧</a>
+                            </li>
+
+                            <li>
+                                <a href="">1:1 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">프로젝트</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="">프로젝트</a>
+                            </li>
+                            <li>
+                                <a href="">체험하기</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">마이페이지</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">회원정보</a>
+                            </li>
+
+                            <li>
+                                <a href="">입금계좌</a>
+                            </li>
+
+                            <li>
+                                <a href="">크레딧</a>
+                            </li>
+
+                            <li>
+                                <a href="">1:1 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">문의</a>
+                        <ul class="sub title-r-15">
+                            <li>
+                                <a href="">비지니스 문의</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#">회원가입</a>
+    
+                    </li>
+                </ul>
+            </nav>
+            <div class="m-menu-btn-box flx">
+                
+                <button type="button" class="m-menu-btn on">메뉴</button>
+                <button type="button" class="m-x-btn">X</button>
+
+            </div>
+        </div>
+        <div class="nav-bg"></div>
+
+    </header>
+
+
+
+    <div class="my-page">
+
+        <div class="sub-visual">
+            <div class="inner">
+
+                <div class="sub-visual-img">
+                </div>
+
+                <p class="headline-m-34 gray-000 my-page-tit">마이페이지</p>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="inner">
+            <ul class="sub-menu-list-box flx title-r-21 gray-400">
+                <li><a href="../html-230321/[3.0.1]my-info.html">회원정보</a></li>
+                <li><a href="../html-230321/[3.1.0]change-pw.html" class="sub-menu-curr">비밀번호 변경</a></li>
+                <li><a href="../html-230321/[3.2.0]my-bank.html">입금계좌</a></li>
+                <li><a href="../html-230321/[3.3.0]my-credit-today.html">크레딧</a></li>
+                <li><a href="#">1:1 문의</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="inner member-info chg-pw">
+
+            <div class="member-info-wrap">
+                <p class="headline-m-24 gray-900">비밀번호 변경</p>
+
+                <div class="col-12 row-gap-32">
+
+
+                    <div class="label-input-box flx">
+                        <label for="curr-pw" class="title-r-17 gray-900">현재 비밀번호</label>
+
+                        <input id="curr-pw" type="text" placeholder="현재 사용중인 비밀번호">
+
+                    </div>
+
+                    <div class="label-input-box flx chg-pw">
+                        <label for="new-pw" class="title-r-17 gray-900">새 비밀번호</label>
+
+                        <input id="new-pw" type="text" placeholder="8자 이상 영문자, 숫자, 특수문자 조합(각 한개 이상)">
+
+                    </div>
+
+                    <div class="label-input-box flx">
+                        <label for="new-pw-auth" class="title-r-17 gray-900">새 비밀번호 확인</label>
+
+                        <input id="new-pw-auth" type="text" placeholder="비밀번호 확인">
+
+                    </div>
+
+
+  
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="inner">
+            <div class="flx submit-btn-box">
+                <button type="button" class="submit-btn">수정</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="inner">
+
+            <div class="f-cnt-box col-12">
+
+                <div class="f-logo">
+                    <img src="../images/euclidsoft-logo.png" alt="euclidsoft-logo">
+                </div>
+
+                <div class="f-info-box title-m-13 gray-600">
+
+                    <ul class="f-menu flx">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+
+                    </ul>
+
+
+                    <ul class="f-address flx">
+                        <li>(35214) 대전광역시 서구 대덕대로317번길 20 4층</li>
+                        <li>Tel : 042-488-6589 Fax: 042-367-0126</li>
+
+                    </ul>
+
+                    <p class="copyright">© Copyright 2023 EUCLIDSOFT All Rights Reserved.</p>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- ==================== Js ==================== -->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+
+    <script src="../js/external/jquery/jquery.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+
+    <script src="../js/jquery.nice-select.min.js"></script>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
