@@ -86,6 +86,27 @@ body {
 
 }
 
+body::-webkit-scrollbar {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    width: 4px;
+    background: #9EA8B3;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+
+
 /*
 COMMON
 ================================================ */
@@ -362,7 +383,15 @@ nav {
     /* width: max-content; */
     position: absolute;
 
-    top: 109px;
+    /* top: 109px; */
+    /* top: 0px; */
+    top: 100px;
+    /* top: 138px; */
+
+
+    /* padding-top: 109px; */
+    /* padding-top: 38px; */
+
 
     /* left: 50%;
     transform: translateX(-50%); */
@@ -372,9 +401,26 @@ nav {
     display: none;
 }
 
+.sub.active {
+    display: block;
+}
+
 .sub li {
     padding: 4px 0;
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
+    margin-bottom: 6px;
+    /* margin-bottom: 4px; */
+
+}
+
+.sub li:first-child {
+    padding-top: 38px;
+
+}
+
+.sub li:last-child {
+    padding-bottom: 48px;
+
 }
 
 /* .sub li > a {
@@ -383,12 +429,18 @@ nav {
 
 .sub li>a {
     /* padding: 0 20px; */
+    /* padding: 4px 0; */
+
+    line-height: 25.5px;
+
 }
 
 .sub li>a:hover {
     font-size: 15px;
     font-weight: 500;
     line-height: 22.5px;
+    line-height: 25.5px;
+
 
     color: #007CBD;
 }
@@ -397,15 +449,23 @@ nav {
 
 .nav-bg {
 
-    height: 155px;
-    max-width: 1280px;
+    /* height: 155px; */
+    height: 236px;
+    /* max-width: 1280px; */
+    max-width: 100%;
 
     margin: 0 auto;
     background: #FFFFFF;
 
     border: 1px solid #F0F3F5;
 
+    border-radius: 0 0 70px 70px;
+
     display: none;
+}
+
+.nav-bg.active {
+    display: block;
 }
 
 .m-menu-btn-box {
@@ -556,12 +616,17 @@ nav {
         padding: 0;
     }
 
+    .sub li:first-child {
+        padding-top: 0;
+    }
+
     .sub li>a:hover {
         color: #1B242C;
     }
 
     .sub li:last-child {
         margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .m-menu-btn-box {
@@ -619,7 +684,7 @@ Section 1
 
 .main-visual {
 
-    background-image: url(../images/main-visual.png);
+    background-image: url(../images/main-visual+.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -649,6 +714,66 @@ Section 1
 
 /* ======== login-box ======== */
 
+.login-float-btn-box {
+    position: absolute;
+    right: -10px;
+    bottom: 45px;
+
+    z-index: 100;
+
+    border-radius: calc( 87px / 2);
+
+
+    display: none;
+}
+
+.login-float-btn-box.active {
+    display: block;
+}
+
+.login-float-btn {
+    width: 87px;
+    height: 87px;
+    border-radius: calc( 87px / 2);
+
+    background-color: #FF805B;
+
+    flex-direction: column;
+    justify-content: center;
+
+    transition: all 200ms;
+
+
+    /* font-weight: 400; */
+}
+
+
+.login-float-btn:hover {
+    background: #E57352;
+
+}
+
+
+.icon-login {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/icon/login-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-mypage {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/icon/icon-mypage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 
 .login-box {
@@ -671,7 +796,39 @@ Section 1
     width: 100%;
     height: 400px;
 
+    display: none;
+
+
 }
+
+.login-box.active {
+    display: block;
+
+}
+
+.login-box.login-after.active {
+    display: grid;
+}
+
+
+.login-x-btn {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../images/icon/login-x-btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    top: 12px;
+    right: 12px;
+
+    overflow: hidden;
+    text-indent: -999px;
+}
+
 
 .login-box>form {
     display: flex;
@@ -909,7 +1066,9 @@ button.login-btn span {
 
     .login-box .name-box {
         grid-column: span 4;
-        align-items: flex-start;
+        grid-column: 1 / span 4;
+
+        /* align-items: flex-start; */
     }
 
     .login-info-box {
@@ -925,7 +1084,19 @@ button.login-btn span {
 
 }
 
-@media all and (max-width: 575px) {}
+@media all and (max-width: 575px) {
+
+
+}
+
+@media all and (max-width: 479px) {
+
+    /* .login-box .name-box {
+        grid-column: 1 / span 4;
+
+        align-items: flex-start;
+    } */
+}
 
 /*
 Section 2
@@ -1612,7 +1783,9 @@ footer {
 }
 
 .name-box {
-    grid-column: span 3;
+    /* grid-column: span 3; */
+    grid-column: 1 / span 3;
+
 
     flex-direction: column;
     justify-content: flex-start;
@@ -2025,7 +2198,7 @@ My page > [2.0.0] guide-project
     }
 
 
-    
+
     .v-tab-list {
         font-size: 19px;
         padding: 10px;
@@ -2061,13 +2234,14 @@ My page > [2.0.0] guide-project
         justify-content: flex-start;
     }
 
-    .sub-menu-list-box.resize > li {
+    .sub-menu-list-box.resize>li {
         margin-right: 12px;
     }
 
     .g-txt-tit {
         text-align: center;
     }
+
     .guide-txt-box {
         padding: 0 10px;
     }
@@ -2232,16 +2406,17 @@ button.exp-btn span {
     .exp-txt-box {
         grid-column: span 6;
         /* padding-left: 8px; */
-        
+
     }
-    
 
 
-    .exp-btn-box { 
+
+    .exp-btn-box {
         grid-column: span 4;
-        justify-content : flex-end;
+        justify-content: flex-end;
     }
-    .exp-btn-box > button:first-child {
+
+    .exp-btn-box>button:first-child {
         margin-right: 24px;
     }
 }
@@ -2249,8 +2424,9 @@ button.exp-btn span {
 @media all and (max-width: 1023px) {
     .exp-list>img {
         grid-column: span 3;
-        
+
     }
+
     .exp-txt-box {
         grid-column: span 6;
     }
@@ -2258,6 +2434,7 @@ button.exp-btn span {
     .exp-txt-tit {
         font-size: 21px;
     }
+
     .exp-txt-desc {
         font-size: 15px;
         margin-top: 8px;
@@ -2273,7 +2450,7 @@ button.exp-btn span {
         margin-left: 24px;
     }
 
-    .exp-btn-box > button:first-child {
+    .exp-btn-box>button:first-child {
         margin-right: 0;
         margin-bottom: 12px;
     }
@@ -2300,7 +2477,7 @@ button.exp-btn span {
         margin-top: -16px;
     }
 
-    .exp-btn-box > button:first-child {
+    .exp-btn-box>button:first-child {
         margin-bottom: 0;
         margin-right: 24px;
     }
@@ -2327,7 +2504,7 @@ button.exp-btn span {
     }
 
 
-   
+
 }
 
 @media all and (max-width: 479px) {
@@ -2879,7 +3056,7 @@ button.submit-btn:hover {
 }
 
 
-@media all and (max-width: 1199px){
+@media all and (max-width: 1199px) {
 
     .chk-box-wrap.flx-wrap,
     .radio-btn-wrap.flx-wrap {
