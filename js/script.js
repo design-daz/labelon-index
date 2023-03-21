@@ -32,20 +32,23 @@ $(document).ready(function () {
       }
     );
 
-    // $(".nav-bg").hover(
-    //   function () {
+    $(".nav-bg").hover(
+      function () {
+        // $(".hover-bg").stop().show();
 
-    //     $(".nav-bg").stop().show();
-    //     $("ul.sub").stop().show();
+        $(".nav-bg").stop().slideDown();
+        $("ul.sub").stop().slideDown();
+      },
+      function () {
+        // $(".nav-bg").stop().hide();
+        // $(".hover-bg").stop().hide();
 
-    //   },
-    //   function () {
+        $(".nav-bg").stop().slideUp();
+        $("ul.sub").stop().slideUp();
 
-    //     $(".nav-bg").stop().hide();
-    //     $("ul.sub").stop().hide();
-
-    //   }
-    // );
+        // $(".nav-bg").stop().slideUp();
+      }
+    );
   }
 
   // mobile
@@ -118,6 +121,31 @@ $(document).ready(function () {
     },
   });
 
+  // section 1 - login float btn
+  // =========================== //
+
+  // if ($(window).width() > 767) {
+    $(".login-float-btn").click(function () {
+      // $(".login-box").stop().fadeIn().toggleClass("active");
+      $(".login-box").stop().toggleClass("active");
+
+      $(".login-float-btn-box").stop().toggleClass("active");
+      // $(".login-float-btn-box").stop().fadeOut(100).removeClass("active");
+
+
+    });
+
+    $(".login-x-btn").click(function () {
+      // $(".login-box").stop().fadeOut().removeClass("active");
+      $(".login-box").stop().toggleClass("active");
+
+      $(".login-float-btn-box").stop().toggleClass("active");
+      // $(".login-float-btn-box").stop().fadeIn().toggleClass("active");
+
+
+    });
+  // }
+
   // [2.0.0] vetical tab
   // =========================== //
 
@@ -178,15 +206,7 @@ $(document).ready(function () {
 
   $("select").niceSelect();
 
-  // [3.3.0] credit-tab-box
-  // =========================== //
-
-  // $(".v-tab-btn-box > button").click(function () {
-  //   $(this).addClass("on").siblings().removeClass("on");
-  //   $("#" + $(this).data("id")).addClass("on").siblings().removeClass("on");
-  // });
-
-  // [2.0.0] credit-tab-box
+  // credit-tab-box
   // =========================== //
 
   $(".guide-v-tab > button").click(function () {
