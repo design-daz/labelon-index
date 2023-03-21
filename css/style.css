@@ -414,12 +414,17 @@ nav {
 }
 
 .sub li:first-child {
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding-top: 24px;
+
 
 }
 
 .sub li:last-child {
-    padding-bottom: 48px;
+    /* padding-bottom: 48px; */
+    padding-bottom: 24px;
+
+    margin-bottom: 0;
 
 }
 
@@ -450,7 +455,9 @@ nav {
 .nav-bg {
 
     /* height: 155px; */
-    height: 236px;
+    /* height: 236px; */
+    height: 192px;
+
     /* max-width: 1280px; */
     max-width: 100%;
 
@@ -459,7 +466,9 @@ nav {
 
     border: 1px solid #F0F3F5;
 
-    border-radius: 0 0 70px 70px;
+    /* border-radius: 0 0 70px 70px; */
+    border-radius: 0 0 100px 100px;
+
 
     display: none;
 }
@@ -482,8 +491,8 @@ nav {
 
 .m-menu-btn {
 
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 
     background-image: url(../images/icon/m-menu-btn.png);
     background-position: center;
@@ -501,8 +510,8 @@ nav {
 
 .m-x-btn {
 
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 
     background-image: url(../images/icon/x-btn.png);
     background-position: center;
@@ -547,18 +556,32 @@ nav {
         display: none;
     } */
 
+    header {
+        height: 80px;
+    }
+
+
+    header .inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
     nav {
         display: none;
 
         background: #fff;
         position: absolute;
-        top: 100px;
+        top: 80px;
         left: 0;
 
         width: 100%;
 
         z-index: 1024;
 
+    }
+
+    header .main-logo>a {
+        /* width: 128px; */
     }
 
     ul.gnb.flx {
@@ -642,14 +665,14 @@ nav {
     }
 
     .m-menu-btn-box {
-        grid-column: sapn 1;
+        /* grid-column: sapn 1; */
     }
 }
 
 @media all and (max-width: 575px) {
-    header .main-logo {
-        grid-column: span 5;
-    }
+    /* header .main-logo {
+        grid-column: span 6;
+    } */
 
 
 }
@@ -1096,6 +1119,30 @@ button.login-btn span {
 
         align-items: flex-start;
     } */
+
+    .main-visual-cnt {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .login-float-btn-box.active {
+        display: none;
+    }
+
+    .login-x-box {
+        display: none;
+    }
+
+    .login-box {
+        display: block;
+
+        position: static;
+        max-width: 100%;
+
+        transform: translateX(0);
+    
+        margin-top: 10px;
+    }
 }
 
 /*
@@ -1106,7 +1153,9 @@ Section 2
 
 
 .section.sec2 {
-    margin-top: 166px;
+    /* margin-top: 166px; */
+    margin-top: 152px;
+
 }
 
 .sec2-cnt-box {
@@ -1167,7 +1216,9 @@ Section 2
 }
 
 .sec2-sld>.sec2-sld-wrp {
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 6px;
+
 }
 
 .sec2-sld-cnt {
@@ -1316,7 +1367,7 @@ button.sld-btn {
         grid-column: span 12;
         /* justify-self:auto; */
 
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
 
     .sec2-txt-box>.txt-tit br {
@@ -1329,14 +1380,20 @@ button.sld-btn {
 
     .sec2-sld-box {
         grid-column: span 12;
-        padding: 0 20px;
+        /* padding: 0 20px; */
 
     }
 }
 
-@media all and (min-width: 360) and (max-width: 767px) {
+@media all and (max-width: 479px) {
 
-    header {}
+    /* .section.sec2 {
+        margin-top: 500px;
+    } */
+
+    .sec2-txt-box {
+        padding-top: 0;
+    }
 }
 
 
@@ -1344,7 +1401,9 @@ button.sld-btn {
 Section 3
 ================================================ */
 .sec3 {
-    margin-top: 151px;
+    /* margin-top: 151px; */
+    margin-top: 152px;
+
 }
 
 .sec3 .txt-tit {
@@ -1599,7 +1658,8 @@ button.program-more-btn span {
 @media all and (max-width: 1023px) {
 
     .program-box-wrap {
-        padding: 0 20px;
+        /* padding: 0 20px; */
+        
 
     }
 
@@ -1620,7 +1680,9 @@ button.program-more-btn span {
 @media all and (max-width: 575px) {
 
     .program-box-wrap {
-        padding: 0 20px;
+        /* padding: 0 20px; */
+        padding: 0px;
+
     }
 
     .program-box {
