@@ -1177,8 +1177,8 @@ button.login-btn span {
     }
 
     .login-box {
-        /* display: block; */
-        display: grid;
+        display: block;
+        /* display: grid; */
 
 
         position: static;
@@ -1187,6 +1187,10 @@ button.login-btn span {
         transform: translateX(0);
 
         margin-top: 10px;
+    }
+
+    .login-box.login-after {
+        display: grid;
     }
 }
 
@@ -1914,6 +1918,9 @@ footer {
     /* height: auto; */
 
     padding: 40px 20px 42px;
+
+    /* display: grid; */
+
 
 }
 
@@ -4377,7 +4384,7 @@ table.question {
 
 
 table.question colgroup>.col-w-01 {
-    width: 5%;
+    width: 6%;
 }
 
 table.question colgroup>.col-w-02 {
@@ -4419,6 +4426,8 @@ table.question colgroup>.col-w-06 {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+
+    padding-left: 2.5%;
 }
 
 .table-box.question table tbody tr:last-child {
@@ -4479,6 +4488,10 @@ td.add-file {
 
 
 @media all and (max-width: 1023px) {
+
+    table.question colgroup>.col-w-01 {
+        width: 7%;
+    }
 
     table.question colgroup>.col-w-02 {
         width: 15%;
