@@ -76,6 +76,18 @@ $(document).ready(function () {
       $(".m-menu-btn").show();
       $(".m-x-btn").hide();
     });
+
+    // ====== Nav - shadow ===== //
+
+    $(window).scroll(function () {
+      var height = $(document).scrollTop();
+
+      if (height >= 1) {
+        $("header").addClass("b-shadow");
+      } else {
+        $("header").removeClass("b-shadow");
+      }
+    });
   }
 
   // swiper - main-visual
@@ -125,25 +137,21 @@ $(document).ready(function () {
   // =========================== //
 
   // if ($(window).width() > 767) {
-    $(".login-float-btn").click(function () {
-      // $(".login-box").stop().fadeIn().toggleClass("active");
-      $(".login-box").stop().toggleClass("active");
+  $(".login-float-btn").click(function () {
+    // $(".login-box").stop().fadeIn().toggleClass("active");
+    $(".login-box").stop().toggleClass("active");
 
-      $(".login-float-btn-box").stop().toggleClass("active");
-      // $(".login-float-btn-box").stop().fadeOut(100).removeClass("active");
+    $(".login-float-btn-box").stop().toggleClass("active");
+    // $(".login-float-btn-box").stop().fadeOut(100).removeClass("active");
+  });
 
+  $(".login-x-btn").click(function () {
+    // $(".login-box").stop().fadeOut().removeClass("active");
+    $(".login-box").stop().toggleClass("active");
 
-    });
-
-    $(".login-x-btn").click(function () {
-      // $(".login-box").stop().fadeOut().removeClass("active");
-      $(".login-box").stop().toggleClass("active");
-
-      $(".login-float-btn-box").stop().toggleClass("active");
-      // $(".login-float-btn-box").stop().fadeIn().toggleClass("active");
-
-
-    });
+    $(".login-float-btn-box").stop().toggleClass("active");
+    // $(".login-float-btn-box").stop().fadeIn().toggleClass("active");
+  });
   // }
 
   // [2.0.0] vetical tab
