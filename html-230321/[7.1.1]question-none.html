@@ -7,26 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>LabelOn</title>
-    <meta name="LabelOn" content="LabelOn my-page my-credit-today">
+    <meta name="LabelOn" content="LabelOn my-page question-none">
 
     <!-- 파비콘 -->
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.ico">
 
 
     <!-- JQuery -->
-    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
 
-    <link rel="stylesheet" href="/css/nice-select.css">
-
-
-    <!-- <link rel="stylesheet" href="/css/billboard.min.css"> -->
+    <link rel="stylesheet" href="../css/nice-select.css">
 
 
     <!-- Swiper@8 -->
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
 
 
@@ -34,7 +31,7 @@
 
 <body>
 
-    <!-- ============  My-page > [3.3.0] my-credit-today ============ -->
+    <!-- ============  My-page > [7.1.1] question-none ============ -->
 
     <header>
         <div class="inner col-12">
@@ -117,7 +114,7 @@
 
                     <li class="nav-list">
                         <a href="#">회원가입</a>
-                      
+             
                     </li>
                 </ul>
             </nav>
@@ -153,18 +150,18 @@
 
         <div class="inner">
             <ul class="sub-menu-list-box flx title-r-21 gray-400">
-                <li><a href="/html/[3.0.1]my-info.html">회원정보</a></li>
-                <li><a href="/html/[3.1.0]change-pw.html">비밀번호 변경</a></li>
-                <li><a href="/html/[3.2.0]my-bank.html">입금계좌</a></li>
-                <li><a href="/html/[3.3.0]my-credit-today.html" class="sub-menu-curr">크레딧</a></li>
-                <li><a href="#">1:1 문의</a></li>
+                <li><a href="../html/[3.0.1]my-info.html">회원정보</a></li>
+                <li><a href="../html/[3.1.0]change-pw.html">비밀번호 변경</a></li>
+                <li><a href="../html/[3.2.0]my-bank.html">입금계좌</a></li>
+                <li><a href="../html/[3.3.0]my-credit-today.html">크레딧</a></li>
+                <li><a href="../html/[7.1.0]question.html" class="sub-menu-curr">1:1 문의</a></li>
 
             </ul>
         </div>
 
 
         <div class="inner">
-            <div class="col-12 credit-box-wrap">
+            <div class="col-12 credit-box-wrap question">
 
                 <div class="credit-box">
                     <div class="credit-tit-box">
@@ -219,53 +216,9 @@
 
         </div>
 
-        <div class="inner credit-cnt-wrap">
+        <div class="inner credit-cnt-wrap question">
 
-            <!-- ===== crdit-tab & graph =====  -->
-            <div class="credit-tab-box col-12">
-
-      
-
-                <ul class="v-tab-btn-box flx">
-                    <li class="tab-btn"><a href="">누적</a></li>
-                    <li class="tab-btn"><a href="">월별</a></li>
-                    <li class="tab-btn on"><a href="/html/[3.3.0]my-credit-today.html ">오늘</a></li>
-                    <li class="tab-btn"><a href="/html/[3.4.0]my-credit-average.html">일일평균</a></li>
-                </ul>
-
-                <div class="v-tab-cnt-box col-10">
-                    <div class="graph-cnt-box">
-                        <p class="graph-tit">크레딧</p>
-
-                        <div class="imsi-graph">
-                      
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="graph-cnt-box">
-
-                        <p class="graph-tit">작업량</p>
-                        <div class="imsi-graph">
-                          
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-
-                
-
-            </div>
-
-
-            <div class="col-12 input-srch-wrap row-gap-32">
+            <div class="col-12 notice-wrap row-gap-32 question">
 
                 <div class="input-srch-box">
                     <input type="search" placeholder="확정월 검색">
@@ -273,54 +226,48 @@
                 </div>
 
 
-                <div class="credit-table-wrap">
+                <div class="notice-table-wrap">
 
-                    <div class="table-box over">
-                        <table class="over">
-                            <caption>크레딧 지급내역</caption>
+                    <div class="table-box question">
+                        <table class="question"> 
+                            <caption>1:1 문의</caption>
 
                             <colgroup>
                                 <col class="col-w-01">
                                 <col class="col-w-02">
                                 <col class="col-w-03">
                                 <col class="col-w-04">
-                                <col class="">
-                                <col class="">
-                                <col class="">
-                                <col class="col-w-08">
-                                <col class="">
-                                <col class="col-w-10">
-                                <col class="">
+                                <col class="col-w-05">
+                                <col class="col-w-06">
+
+
 
                             </colgroup>
 
                             <thead>
                                 <tr>
-                                    <th class="text-center" scope="col">번호</th>
-                                    <th class="text-center" scope="col">정산여부</th>
-                                    <th class="text-center" scope="col">정산일자</th>
-                                    <th class="text-center" scope="col">작업</th>
-                                    <th class="text-center" scope="col">과제</th>
-                                    <th class="text-center" scope="col">데이터세트</th>
-                                    <th class="text-center" scope="col">등급</th>
-                                    <th class="text-center" scope="col">단가</th>
-                                    <th class="text-center" scope="col">건수</th>
-                                    <th class="text-center" scope="col">포인트</th>
-                                    <th class="text-center" scope="col">정산금</th>
+                                    <th class="text-center" scope="col">NO.</th>
+                                    <th class="text-center" scope="col">분류</th>
+
+                                    <th class="text-center" scope="col">제목</th>
+                                    <th class="text-center" scope="col">접수상태</th>
+
+                                    <th class="text-center" scope="col">일자</th>
+                                    <th class="text-center" scope="col">첨부</th>
+
 
                                 </tr>
                             </thead>
 
 
                             <tbody>
-
                                 <tr>
-                                    <td colspan="11" class="list-none">
+                                    <td colspan="6" class="list-none">
 
                                         <div class="flx list-none-box">
                                             <div class="list-none-icon"></div>
                                             <p class="gray-400">
-                                                작업 내역이 없습니다.
+                                                1:1 문의 내역이 없습니다.
                                             </p>
                                         </div>
 
@@ -332,7 +279,11 @@
                         </table>
                     </div>
 
-                    <div class="page-box flx">
+                    <div class="que-btn-box flx">
+                        <button type="button" class="que-btn">문의하기</button>
+                    </div>
+
+                    <div class="page-box flx question">
 
                         <div class="paginaiton flx">
 
@@ -378,7 +329,7 @@
             <div class="f-cnt-box col-12">
 
                 <div class="f-logo">
-                    <img src="/images/euclidsoft-logo.png" alt="euclidsoft-logo">
+                    <img src="../images/euclidsoft-logo.png" alt="euclidsoft-logo">
                 </div>
 
                 <div class="f-info-box title-m-13 gray-600">
@@ -414,19 +365,16 @@
 
 
     <!-- ==================== Js ==================== -->
-    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
 
 
-    <script src="/js/external/jquery/jquery.js"></script>
-    <script src="/js/jquery-ui.min.js"></script>
-
-    <!-- <script src="/js/billboard.pkgd.min.js"></script> -->
-    <!-- <script src="/js/credit-today.js"></script> -->
+    <script src="../js/external/jquery/jquery.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
 
 
-    <script src="/js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
 
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
