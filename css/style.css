@@ -204,6 +204,53 @@ index
 
 
 /*
+top-btn
+================================================ */
+
+
+.top-btn {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25.5px;
+
+    color: #1B242C;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: calc(65px / 2);
+
+    text-align: center;
+
+    border: 2px solid transparent;
+
+    transition: border 200ms;
+
+    position: fixed;
+
+    bottom: 105px;
+    right: 38px;
+
+    z-index: 10;
+
+
+}
+
+.top-btn:hover {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25.5px;
+
+    color: #1B242C;
+
+    border: 2px solid #007CBD;
+    
+}
+
+
+
+
+/*
 chat bot
 ================================================ */
 
@@ -908,7 +955,7 @@ Section 1
 
 
 
-.login-box form input {
+.login-box form > input {
     padding: 8.5px 16px 8.5px 36px;
     text-align: left;
 
@@ -966,6 +1013,14 @@ Section 1
     color: #9EA8B3;
 }
 
+/* .login-box form input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #E9ECEF;
+    border-radius: 2px;
+
+    background-color: #fff;
+} */
 
 input[type="checkbox"] {
     width: 16px;
