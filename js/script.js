@@ -196,17 +196,17 @@ $(document).ready(function () {
       });
     });
 
-    //   // // Go to the TOP
-    //   // var btnTop = $(".btn-top");
-    //   // btnTop.on("click", "a", function (e) {
-    //   //   e.preventDefault();
-    //   //   $doc.stop().animate(
-    //   //     {
-    //   //       scrollTop: 0,
-    //   //     },
-    //   //     800
-    //   //   );
-    //   // });
+    // // Go to the TOP
+    // var btnTop = $(".btn-top");
+    // btnTop.on("click", "a", function (e) {
+    //   e.preventDefault();
+    //   $doc.stop().animate(
+    //     {
+    //       scrollTop: 0,
+    //     },
+    //     800
+    //   );
+    // });
   })(window, window.jQuery);
 
   // Select library - nice select
@@ -224,4 +224,21 @@ $(document).ready(function () {
       .siblings()
       .removeClass("on");
   });
+
+  // scroll top 버튼
+  // =========================== //
+  $(".top-btn").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+
+
+  
+
+
+
 }); //ready end

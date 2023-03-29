@@ -35,7 +35,28 @@ $(document).ready(function () {
 
       });
 
+  // modal
+  // =========================== //
+  $(".reject-btn").click(function () {
+    $(".modal-reject").stop().fadeIn(200);
+    // $("body").css("overflow","hidden");
 
+  });
+
+  $(".close-btn").click(function () {
+    $(".modal-reject").stop().fadeOut(200);
+    // $("body").css("overflow","auto");
+
+
+  });
+
+  
+  $(".modal-x-btn").click(function () {
+    $(".modal-alert").stop().fadeOut(200);
+    // $("body").css("overflow","auto");
+
+
+  });
 
 
 }); //ready end
